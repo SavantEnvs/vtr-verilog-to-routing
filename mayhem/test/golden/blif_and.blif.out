@@ -1,0 +1,15 @@
+#vtr_flow/benchmarks/microbenchmarks/and.blif:1
+.model top
+#vtr_flow/benchmarks/microbenchmarks/and.blif:2
+.inputs \
+    a \
+    b
+#vtr_flow/benchmarks/microbenchmarks/and.blif:3
+.outputs \
+    c
+
+#vtr_flow/benchmarks/microbenchmarks/and.blif:7
+.names a b c
+11 1
+#vtr_flow/benchmarks/microbenchmarks/and.blif:8
+.end

@@ -1,0 +1,9 @@
+project: savantenvs/vtr-verilog-to-routing
+target: fuzz_expr_eval
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_expr_eval/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_expr_eval
+    libfuzzer: true
+    timeout: 10

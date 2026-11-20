@@ -1,0 +1,23 @@
+#vtr_flow/benchmarks/microbenchmarks/and_latch.blif:1
+.model top
+#vtr_flow/benchmarks/microbenchmarks/and_latch.blif:2
+.inputs \
+    a \
+    b \
+    clk
+#vtr_flow/benchmarks/microbenchmarks/and_latch.blif:3
+.outputs \
+    out
+
+#vtr_flow/benchmarks/microbenchmarks/and_latch.blif:7
+.names a b c
+11 1
+
+#vtr_flow/benchmarks/microbenchmarks/and_latch.blif:8
+.latch \
+    c \
+    out \
+    re \
+    clk \
+    0#vtr_flow/benchmarks/microbenchmarks/and_latch.blif:10
+.end

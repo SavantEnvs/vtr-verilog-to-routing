@@ -1,0 +1,91 @@
+<rr_graph tool_comment="Generated from arch file k4_N4_90nm.xml" tool_name="vpr" tool_version="0.0.0">
+<channels>
+<channel chan_width_max="4" x_max="4" x_min="4" y_max="4" y_min="4"/>
+<x_list index="0" info="4"/>
+<x_list index="1" info="4"/>
+<x_list index="2" info="4"/>
+<x_list index="3" info="4"/>
+<y_list index="0" info="4"/>
+<y_list index="1" info="4"/>
+<y_list index="2" info="4"/>
+<y_list index="3" info="4"/>
+</channels>
+<switches>
+<switch id="0" name="0" type="mux"><timing Tdel="6.24399976e-11"/>
+<sizing buf_size="0" mux_trans_size="0"/>
+</switch>
+<switch id="1" name="ipin_cblock" type="mux"><timing R="1055.23254" Tdel="8.04500008e-11"/>
+<sizing buf_size="0" mux_trans_size="0"/>
+</switch>
+<switch id="2" name="__vpr_delayless_switch__" type="mux"><timing/>
+<sizing buf_size="0" mux_trans_size="0"/>
+</switch>
+</switches>
+<segments>
+<segment id="0" length="1" name="unnamed_segment_0" res_type="GENERAL"><timing/>
+</segment>
+</segments>
+<block_types>
+<block_type height="1" id="0" name="EMPTY" width="1"></block_type>
+<block_type height="1" id="1" name="io" width="1"><pin_class type="INPUT"><pin ptc="0">io[0].outpad[0]</pin>
+</pin_class>
+<pin_class type="OUTPUT"><pin ptc="1">io[0].inpad[0]</pin>
+</pin_class>
+<pin_class type="INPUT"><pin ptc="2">io[0].clock[0]</pin>
+</pin_class>
+<pin_class type="INPUT"><pin ptc="3">io[1].outpad[0]</pin>
+</pin_class>
+<pin_class type="OUTPUT"><pin ptc="4">io[1].inpad[0]</pin>
+</pin_class>
+<pin_class type="INPUT"><pin ptc="5">io[1].clock[0]</pin>
+</pin_class>
+<pin_class type="INPUT"><pin ptc="6">io[2].outpad[0]</pin>
+</pin_class>
+<pin_class type="OUTPUT"><pin ptc="7">io[2].inpad[0]</pin>
+</pin_class>
+<pin_class type="INPUT"><pin ptc="8">io[2].clock[0]</pin>
+</pin_class>
+</block_type>
+<block_type height="1" id="2" name="clb" width="1"><pin_class type="INPUT"><pin ptc="0">clb.I[0]</pin>
+<pin ptc="1">clb.I[1]</pin>
+<pin ptc="2">clb.I[2]</pin>
+<pin ptc="3">clb.I[3]</pin>
+<pin ptc="4">clb.I[4]</pin>
+<pin ptc="5">clb.I[5]</pin>
+<pin ptc="6">clb.I[6]</pin>
+<pin ptc="7">clb.I[7]</pin>
+<pin ptc="8">clb.I[8]</pin>
+<pin ptc="9">clb.I[9]</pin>
+</pin_class>
+<pin_class type="OUTPUT"><pin ptc="10">clb.O[0]</pin>
+<pin ptc="11">clb.O[1]</pin>
+<pin ptc="12">clb.O[2]</pin>
+<pin ptc="13">clb.O[3]</pin>
+</pin_class>
+<pin_class type="INPUT"><pin ptc="14">clb.clk[0]</pin>
+</pin_class>
+</block_type>
+</block_types>
+<grid>
+<grid_loc block_type_id="0" height_offset="0" layer="0" width_offset="0" x="0" y="0"/>
+<grid_loc block_type_id="1" height_offset="0" layer="0" width_offset="0" x="0" y="1"/>
+<grid_loc block_type_id="1" height_offset="0" layer="0" width_offset="0" x="0" y="2"/>
+<grid_loc block_type_id="0" height_offset="0" layer="0" width_offset="0" x="0" y="3"/>
+<grid_loc block_type_id="1" height_offset="0" layer="0" width_offset="0" x="1" y="0"/>
+<grid_loc block_type_id="2" height_offset="0" layer="0" width_offset="0" x="1" y="1"/>
+<grid_loc block_type_id="2" height_offset="0" layer="0" width_offset="0" x="1" y="2"/>
+<grid_loc block_type_id="1" height_offset="0" layer="0" width_offset="0" x="1" y="3"/>
+<grid_loc block_type_id="1" height_offset="0" layer="0" width_offset="0" x="2" y="0"/>
+<grid_loc block_type_id="2" height_offset="0" layer="0" width_offset="0" x="2" y="1"/>
+<grid_loc block_type_id="2" height_offset="0" layer="0" width_offset="0" x="2" y="2"/>
+<grid_loc block_type_id="1" height_offset="0" layer="0" width_offset="0" x="2" y="3"/>
+<grid_loc block_type_id="0" height_offset="0" layer="0" width_offset="0" x="3" y="0"/>
+<grid_loc block_type_id="1" height_offset="0" layer="0" width_offset="0" x="3" y="1"/>
+<grid_loc block_type_id="1" height_offset="0" layer="0" width_offset="0" x="3" y="2"/>
+<grid_loc block_type_id="0" height_offset="0" layer="0" width_offset="0" x="3" y="3"/>
+</grid>
+<rr_nodes>
+</rr_nodes>
+<rr_edges>
+</rr_edges>
+</rr_graph>

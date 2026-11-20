@@ -1,0 +1,2003 @@
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:8
+.model adder_chains
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:9
+.inputs \
+    a0 \
+    b0 \
+    a1 \
+    b1 \
+    a2 \
+    b2 \
+    a3 \
+    b3 \
+    a4 \
+    b4 \
+    a5 \
+    b5 \
+    a6 \
+    b6 \
+    a7 \
+    b7 \
+    a8 \
+    b8 \
+    a9 \
+    b9 \
+    a10 \
+    b10 \
+    a11 \
+    b11 \
+    a12 \
+    b12 \
+    a13 \
+    b13 \
+    a14 \
+    b14 \
+    a15 \
+    b15 \
+    a16 \
+    b16 \
+    a17 \
+    b17 \
+    a18 \
+    b18 \
+    a19 \
+    b19
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:10
+.outputs \
+    s0 \
+    s1 \
+    s2 \
+    s3 \
+    s4 \
+    s5 \
+    s6 \
+    s7 \
+    s8 \
+    s9 \
+    s10 \
+    s11 \
+    s12 \
+    s13 \
+    s14 \
+    s15 \
+    s16 \
+    s17 \
+    s18 \
+    s19
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:12
+.subckt adder \
+    a=a0 \
+    b=b0 \
+    cin=unconn \
+    cout=c0_0 \
+    sumout=s0_0
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:13
+.subckt adder \
+    a=a0 \
+    b=b0 \
+    cin=c0_0 \
+    cout=c0_1 \
+    sumout=s0_1
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:14
+.subckt adder \
+    a=a0 \
+    b=b0 \
+    cin=c0_1 \
+    cout=c0_2 \
+    sumout=s0_2
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:15
+.subckt adder \
+    a=a0 \
+    b=b0 \
+    cin=c0_2 \
+    cout=c0_3 \
+    sumout=s0_3
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:16
+.subckt adder \
+    a=a0 \
+    b=b0 \
+    cin=c0_3 \
+    cout=c0_4 \
+    sumout=s0_4
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:17
+.subckt adder \
+    a=a0 \
+    b=b0 \
+    cin=c0_4 \
+    cout=c0_5 \
+    sumout=s0_5
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:18
+.subckt adder \
+    a=a0 \
+    b=b0 \
+    cin=c0_5 \
+    cout=c0_6 \
+    sumout=s0_6
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:19
+.subckt adder \
+    a=a0 \
+    b=b0 \
+    cin=c0_6 \
+    cout=c0_7 \
+    sumout=s0_7
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:20
+.subckt adder \
+    a=a0 \
+    b=b0 \
+    cin=c0_7 \
+    cout=c0_8 \
+    sumout=s0_8
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:21
+.subckt adder \
+    a=a0 \
+    b=b0 \
+    cin=c0_8 \
+    cout=c0_9 \
+    sumout=s0_9
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:22
+.subckt adder \
+    a=a0 \
+    b=b0 \
+    cin=c0_9 \
+    cout=c0_10 \
+    sumout=s0_10
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:23
+.subckt adder \
+    a=a0 \
+    b=b0 \
+    cin=c0_10 \
+    cout=c0_11 \
+    sumout=s0
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:25
+.subckt adder \
+    a=a1 \
+    b=b1 \
+    cin=unconn \
+    cout=c1_0 \
+    sumout=s1_0
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:26
+.subckt adder \
+    a=a1 \
+    b=b1 \
+    cin=c1_0 \
+    cout=c1_1 \
+    sumout=s1_1
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:27
+.subckt adder \
+    a=a1 \
+    b=b1 \
+    cin=c1_1 \
+    cout=c1_2 \
+    sumout=s1_2
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:28
+.subckt adder \
+    a=a1 \
+    b=b1 \
+    cin=c1_2 \
+    cout=c1_3 \
+    sumout=s1_3
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:29
+.subckt adder \
+    a=a1 \
+    b=b1 \
+    cin=c1_3 \
+    cout=c1_4 \
+    sumout=s1_4
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:30
+.subckt adder \
+    a=a1 \
+    b=b1 \
+    cin=c1_4 \
+    cout=c1_5 \
+    sumout=s1_5
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:31
+.subckt adder \
+    a=a1 \
+    b=b1 \
+    cin=c1_5 \
+    cout=c1_6 \
+    sumout=s1_6
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:32
+.subckt adder \
+    a=a1 \
+    b=b1 \
+    cin=c1_6 \
+    cout=c1_7 \
+    sumout=s1_7
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:33
+.subckt adder \
+    a=a1 \
+    b=b1 \
+    cin=c1_7 \
+    cout=c1_8 \
+    sumout=s1_8
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:34
+.subckt adder \
+    a=a1 \
+    b=b1 \
+    cin=c1_8 \
+    cout=c1_9 \
+    sumout=s1_9
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:35
+.subckt adder \
+    a=a1 \
+    b=b1 \
+    cin=c1_9 \
+    cout=c1_10 \
+    sumout=s1_10
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:36
+.subckt adder \
+    a=a1 \
+    b=b1 \
+    cin=c1_10 \
+    cout=c1_11 \
+    sumout=s1
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:38
+.subckt adder \
+    a=a2 \
+    b=b2 \
+    cin=unconn \
+    cout=c2_0 \
+    sumout=s2_0
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:39
+.subckt adder \
+    a=a2 \
+    b=b2 \
+    cin=c2_0 \
+    cout=c2_1 \
+    sumout=s2_1
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:40
+.subckt adder \
+    a=a2 \
+    b=b2 \
+    cin=c2_1 \
+    cout=c2_2 \
+    sumout=s2_2
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:41
+.subckt adder \
+    a=a2 \
+    b=b2 \
+    cin=c2_2 \
+    cout=c2_3 \
+    sumout=s2_3
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:42
+.subckt adder \
+    a=a2 \
+    b=b2 \
+    cin=c2_3 \
+    cout=c2_4 \
+    sumout=s2_4
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:43
+.subckt adder \
+    a=a2 \
+    b=b2 \
+    cin=c2_4 \
+    cout=c2_5 \
+    sumout=s2_5
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:44
+.subckt adder \
+    a=a2 \
+    b=b2 \
+    cin=c2_5 \
+    cout=c2_6 \
+    sumout=s2_6
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:45
+.subckt adder \
+    a=a2 \
+    b=b2 \
+    cin=c2_6 \
+    cout=c2_7 \
+    sumout=s2_7
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:46
+.subckt adder \
+    a=a2 \
+    b=b2 \
+    cin=c2_7 \
+    cout=c2_8 \
+    sumout=s2_8
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:47
+.subckt adder \
+    a=a2 \
+    b=b2 \
+    cin=c2_8 \
+    cout=c2_9 \
+    sumout=s2_9
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:48
+.subckt adder \
+    a=a2 \
+    b=b2 \
+    cin=c2_9 \
+    cout=c2_10 \
+    sumout=s2_10
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:49
+.subckt adder \
+    a=a2 \
+    b=b2 \
+    cin=c2_10 \
+    cout=c2_11 \
+    sumout=s2
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:51
+.subckt adder \
+    a=a3 \
+    b=b3 \
+    cin=unconn \
+    cout=c3_0 \
+    sumout=s3_0
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:52
+.subckt adder \
+    a=a3 \
+    b=b3 \
+    cin=c3_0 \
+    cout=c3_1 \
+    sumout=s3_1
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:53
+.subckt adder \
+    a=a3 \
+    b=b3 \
+    cin=c3_1 \
+    cout=c3_2 \
+    sumout=s3_2
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:54
+.subckt adder \
+    a=a3 \
+    b=b3 \
+    cin=c3_2 \
+    cout=c3_3 \
+    sumout=s3_3
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:55
+.subckt adder \
+    a=a3 \
+    b=b3 \
+    cin=c3_3 \
+    cout=c3_4 \
+    sumout=s3_4
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:56
+.subckt adder \
+    a=a3 \
+    b=b3 \
+    cin=c3_4 \
+    cout=c3_5 \
+    sumout=s3_5
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:57
+.subckt adder \
+    a=a3 \
+    b=b3 \
+    cin=c3_5 \
+    cout=c3_6 \
+    sumout=s3_6
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:58
+.subckt adder \
+    a=a3 \
+    b=b3 \
+    cin=c3_6 \
+    cout=c3_7 \
+    sumout=s3_7
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:59
+.subckt adder \
+    a=a3 \
+    b=b3 \
+    cin=c3_7 \
+    cout=c3_8 \
+    sumout=s3_8
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:60
+.subckt adder \
+    a=a3 \
+    b=b3 \
+    cin=c3_8 \
+    cout=c3_9 \
+    sumout=s3_9
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:61
+.subckt adder \
+    a=a3 \
+    b=b3 \
+    cin=c3_9 \
+    cout=c3_10 \
+    sumout=s3_10
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:62
+.subckt adder \
+    a=a3 \
+    b=b3 \
+    cin=c3_10 \
+    cout=c3_11 \
+    sumout=s3
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:64
+.subckt adder \
+    a=a4 \
+    b=b4 \
+    cin=unconn \
+    cout=c4_0 \
+    sumout=s4_0
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:65
+.subckt adder \
+    a=a4 \
+    b=b4 \
+    cin=c4_0 \
+    cout=c4_1 \
+    sumout=s4_1
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:66
+.subckt adder \
+    a=a4 \
+    b=b4 \
+    cin=c4_1 \
+    cout=c4_2 \
+    sumout=s4_2
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:67
+.subckt adder \
+    a=a4 \
+    b=b4 \
+    cin=c4_2 \
+    cout=c4_3 \
+    sumout=s4_3
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:68
+.subckt adder \
+    a=a4 \
+    b=b4 \
+    cin=c4_3 \
+    cout=c4_4 \
+    sumout=s4_4
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:69
+.subckt adder \
+    a=a4 \
+    b=b4 \
+    cin=c4_4 \
+    cout=c4_5 \
+    sumout=s4_5
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:70
+.subckt adder \
+    a=a4 \
+    b=b4 \
+    cin=c4_5 \
+    cout=c4_6 \
+    sumout=s4_6
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:71
+.subckt adder \
+    a=a4 \
+    b=b4 \
+    cin=c4_6 \
+    cout=c4_7 \
+    sumout=s4_7
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:72
+.subckt adder \
+    a=a4 \
+    b=b4 \
+    cin=c4_7 \
+    cout=c4_8 \
+    sumout=s4_8
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:73
+.subckt adder \
+    a=a4 \
+    b=b4 \
+    cin=c4_8 \
+    cout=c4_9 \
+    sumout=s4_9
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:74
+.subckt adder \
+    a=a4 \
+    b=b4 \
+    cin=c4_9 \
+    cout=c4_10 \
+    sumout=s4_10
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:75
+.subckt adder \
+    a=a4 \
+    b=b4 \
+    cin=c4_10 \
+    cout=c4_11 \
+    sumout=s4
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:77
+.subckt adder \
+    a=a5 \
+    b=b5 \
+    cin=unconn \
+    cout=c5_0 \
+    sumout=s5_0
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:78
+.subckt adder \
+    a=a5 \
+    b=b5 \
+    cin=c5_0 \
+    cout=c5_1 \
+    sumout=s5_1
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:79
+.subckt adder \
+    a=a5 \
+    b=b5 \
+    cin=c5_1 \
+    cout=c5_2 \
+    sumout=s5_2
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:80
+.subckt adder \
+    a=a5 \
+    b=b5 \
+    cin=c5_2 \
+    cout=c5_3 \
+    sumout=s5_3
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:81
+.subckt adder \
+    a=a5 \
+    b=b5 \
+    cin=c5_3 \
+    cout=c5_4 \
+    sumout=s5_4
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:82
+.subckt adder \
+    a=a5 \
+    b=b5 \
+    cin=c5_4 \
+    cout=c5_5 \
+    sumout=s5_5
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:83
+.subckt adder \
+    a=a5 \
+    b=b5 \
+    cin=c5_5 \
+    cout=c5_6 \
+    sumout=s5_6
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:84
+.subckt adder \
+    a=a5 \
+    b=b5 \
+    cin=c5_6 \
+    cout=c5_7 \
+    sumout=s5_7
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:85
+.subckt adder \
+    a=a5 \
+    b=b5 \
+    cin=c5_7 \
+    cout=c5_8 \
+    sumout=s5_8
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:86
+.subckt adder \
+    a=a5 \
+    b=b5 \
+    cin=c5_8 \
+    cout=c5_9 \
+    sumout=s5_9
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:87
+.subckt adder \
+    a=a5 \
+    b=b5 \
+    cin=c5_9 \
+    cout=c5_10 \
+    sumout=s5_10
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:88
+.subckt adder \
+    a=a5 \
+    b=b5 \
+    cin=c5_10 \
+    cout=c5_11 \
+    sumout=s5
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:90
+.subckt adder \
+    a=a6 \
+    b=b6 \
+    cin=unconn \
+    cout=c6_0 \
+    sumout=s6_0
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:91
+.subckt adder \
+    a=a6 \
+    b=b6 \
+    cin=c6_0 \
+    cout=c6_1 \
+    sumout=s6_1
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:92
+.subckt adder \
+    a=a6 \
+    b=b6 \
+    cin=c6_1 \
+    cout=c6_2 \
+    sumout=s6_2
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:93
+.subckt adder \
+    a=a6 \
+    b=b6 \
+    cin=c6_2 \
+    cout=c6_3 \
+    sumout=s6_3
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:94
+.subckt adder \
+    a=a6 \
+    b=b6 \
+    cin=c6_3 \
+    cout=c6_4 \
+    sumout=s6_4
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:95
+.subckt adder \
+    a=a6 \
+    b=b6 \
+    cin=c6_4 \
+    cout=c6_5 \
+    sumout=s6_5
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:96
+.subckt adder \
+    a=a6 \
+    b=b6 \
+    cin=c6_5 \
+    cout=c6_6 \
+    sumout=s6_6
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:97
+.subckt adder \
+    a=a6 \
+    b=b6 \
+    cin=c6_6 \
+    cout=c6_7 \
+    sumout=s6_7
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:98
+.subckt adder \
+    a=a6 \
+    b=b6 \
+    cin=c6_7 \
+    cout=c6_8 \
+    sumout=s6_8
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:99
+.subckt adder \
+    a=a6 \
+    b=b6 \
+    cin=c6_8 \
+    cout=c6_9 \
+    sumout=s6_9
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:100
+.subckt adder \
+    a=a6 \
+    b=b6 \
+    cin=c6_9 \
+    cout=c6_10 \
+    sumout=s6_10
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:101
+.subckt adder \
+    a=a6 \
+    b=b6 \
+    cin=c6_10 \
+    cout=c6_11 \
+    sumout=s6
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:103
+.subckt adder \
+    a=a7 \
+    b=b7 \
+    cin=unconn \
+    cout=c7_0 \
+    sumout=s7_0
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:104
+.subckt adder \
+    a=a7 \
+    b=b7 \
+    cin=c7_0 \
+    cout=c7_1 \
+    sumout=s7_1
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:105
+.subckt adder \
+    a=a7 \
+    b=b7 \
+    cin=c7_1 \
+    cout=c7_2 \
+    sumout=s7_2
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:106
+.subckt adder \
+    a=a7 \
+    b=b7 \
+    cin=c7_2 \
+    cout=c7_3 \
+    sumout=s7_3
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:107
+.subckt adder \
+    a=a7 \
+    b=b7 \
+    cin=c7_3 \
+    cout=c7_4 \
+    sumout=s7_4
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:108
+.subckt adder \
+    a=a7 \
+    b=b7 \
+    cin=c7_4 \
+    cout=c7_5 \
+    sumout=s7_5
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:109
+.subckt adder \
+    a=a7 \
+    b=b7 \
+    cin=c7_5 \
+    cout=c7_6 \
+    sumout=s7_6
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:110
+.subckt adder \
+    a=a7 \
+    b=b7 \
+    cin=c7_6 \
+    cout=c7_7 \
+    sumout=s7_7
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:111
+.subckt adder \
+    a=a7 \
+    b=b7 \
+    cin=c7_7 \
+    cout=c7_8 \
+    sumout=s7_8
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:112
+.subckt adder \
+    a=a7 \
+    b=b7 \
+    cin=c7_8 \
+    cout=c7_9 \
+    sumout=s7_9
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:113
+.subckt adder \
+    a=a7 \
+    b=b7 \
+    cin=c7_9 \
+    cout=c7_10 \
+    sumout=s7_10
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:114
+.subckt adder \
+    a=a7 \
+    b=b7 \
+    cin=c7_10 \
+    cout=c7_11 \
+    sumout=s7
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:116
+.subckt adder \
+    a=a8 \
+    b=b8 \
+    cin=unconn \
+    cout=c8_0 \
+    sumout=s8_0
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:117
+.subckt adder \
+    a=a8 \
+    b=b8 \
+    cin=c8_0 \
+    cout=c8_1 \
+    sumout=s8_1
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:118
+.subckt adder \
+    a=a8 \
+    b=b8 \
+    cin=c8_1 \
+    cout=c8_2 \
+    sumout=s8_2
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:119
+.subckt adder \
+    a=a8 \
+    b=b8 \
+    cin=c8_2 \
+    cout=c8_3 \
+    sumout=s8_3
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:120
+.subckt adder \
+    a=a8 \
+    b=b8 \
+    cin=c8_3 \
+    cout=c8_4 \
+    sumout=s8_4
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:121
+.subckt adder \
+    a=a8 \
+    b=b8 \
+    cin=c8_4 \
+    cout=c8_5 \
+    sumout=s8_5
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:122
+.subckt adder \
+    a=a8 \
+    b=b8 \
+    cin=c8_5 \
+    cout=c8_6 \
+    sumout=s8_6
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:123
+.subckt adder \
+    a=a8 \
+    b=b8 \
+    cin=c8_6 \
+    cout=c8_7 \
+    sumout=s8_7
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:124
+.subckt adder \
+    a=a8 \
+    b=b8 \
+    cin=c8_7 \
+    cout=c8_8 \
+    sumout=s8_8
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:125
+.subckt adder \
+    a=a8 \
+    b=b8 \
+    cin=c8_8 \
+    cout=c8_9 \
+    sumout=s8_9
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:126
+.subckt adder \
+    a=a8 \
+    b=b8 \
+    cin=c8_9 \
+    cout=c8_10 \
+    sumout=s8_10
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:127
+.subckt adder \
+    a=a8 \
+    b=b8 \
+    cin=c8_10 \
+    cout=c8_11 \
+    sumout=s8
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:129
+.subckt adder \
+    a=a9 \
+    b=b9 \
+    cin=unconn \
+    cout=c9_0 \
+    sumout=s9_0
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:130
+.subckt adder \
+    a=a9 \
+    b=b9 \
+    cin=c9_0 \
+    cout=c9_1 \
+    sumout=s9_1
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:131
+.subckt adder \
+    a=a9 \
+    b=b9 \
+    cin=c9_1 \
+    cout=c9_2 \
+    sumout=s9_2
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:132
+.subckt adder \
+    a=a9 \
+    b=b9 \
+    cin=c9_2 \
+    cout=c9_3 \
+    sumout=s9_3
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:133
+.subckt adder \
+    a=a9 \
+    b=b9 \
+    cin=c9_3 \
+    cout=c9_4 \
+    sumout=s9_4
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:134
+.subckt adder \
+    a=a9 \
+    b=b9 \
+    cin=c9_4 \
+    cout=c9_5 \
+    sumout=s9_5
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:135
+.subckt adder \
+    a=a9 \
+    b=b9 \
+    cin=c9_5 \
+    cout=c9_6 \
+    sumout=s9_6
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:136
+.subckt adder \
+    a=a9 \
+    b=b9 \
+    cin=c9_6 \
+    cout=c9_7 \
+    sumout=s9_7
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:137
+.subckt adder \
+    a=a9 \
+    b=b9 \
+    cin=c9_7 \
+    cout=c9_8 \
+    sumout=s9_8
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:138
+.subckt adder \
+    a=a9 \
+    b=b9 \
+    cin=c9_8 \
+    cout=c9_9 \
+    sumout=s9_9
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:139
+.subckt adder \
+    a=a9 \
+    b=b9 \
+    cin=c9_9 \
+    cout=c9_10 \
+    sumout=s9_10
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:140
+.subckt adder \
+    a=a9 \
+    b=b9 \
+    cin=c9_10 \
+    cout=c9_11 \
+    sumout=s9
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:142
+.subckt adder \
+    a=a10 \
+    b=b10 \
+    cin=unconn \
+    cout=c10_0 \
+    sumout=s10_0
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:143
+.subckt adder \
+    a=a10 \
+    b=b10 \
+    cin=c10_0 \
+    cout=c10_1 \
+    sumout=s10_1
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:144
+.subckt adder \
+    a=a10 \
+    b=b10 \
+    cin=c10_1 \
+    cout=c10_2 \
+    sumout=s10_2
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:145
+.subckt adder \
+    a=a10 \
+    b=b10 \
+    cin=c10_2 \
+    cout=c10_3 \
+    sumout=s10_3
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:146
+.subckt adder \
+    a=a10 \
+    b=b10 \
+    cin=c10_3 \
+    cout=c10_4 \
+    sumout=s10_4
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:147
+.subckt adder \
+    a=a10 \
+    b=b10 \
+    cin=c10_4 \
+    cout=c10_5 \
+    sumout=s10_5
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:148
+.subckt adder \
+    a=a10 \
+    b=b10 \
+    cin=c10_5 \
+    cout=c10_6 \
+    sumout=s10_6
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:149
+.subckt adder \
+    a=a10 \
+    b=b10 \
+    cin=c10_6 \
+    cout=c10_7 \
+    sumout=s10_7
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:150
+.subckt adder \
+    a=a10 \
+    b=b10 \
+    cin=c10_7 \
+    cout=c10_8 \
+    sumout=s10_8
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:151
+.subckt adder \
+    a=a10 \
+    b=b10 \
+    cin=c10_8 \
+    cout=c10_9 \
+    sumout=s10_9
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:152
+.subckt adder \
+    a=a10 \
+    b=b10 \
+    cin=c10_9 \
+    cout=c10_10 \
+    sumout=s10_10
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:153
+.subckt adder \
+    a=a10 \
+    b=b10 \
+    cin=c10_10 \
+    cout=c10_11 \
+    sumout=s10
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:155
+.subckt adder \
+    a=a11 \
+    b=b11 \
+    cin=unconn \
+    cout=c11_0 \
+    sumout=s11_0
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:156
+.subckt adder \
+    a=a11 \
+    b=b11 \
+    cin=c11_0 \
+    cout=c11_1 \
+    sumout=s11_1
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:157
+.subckt adder \
+    a=a11 \
+    b=b11 \
+    cin=c11_1 \
+    cout=c11_2 \
+    sumout=s11_2
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:158
+.subckt adder \
+    a=a11 \
+    b=b11 \
+    cin=c11_2 \
+    cout=c11_3 \
+    sumout=s11_3
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:159
+.subckt adder \
+    a=a11 \
+    b=b11 \
+    cin=c11_3 \
+    cout=c11_4 \
+    sumout=s11_4
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:160
+.subckt adder \
+    a=a11 \
+    b=b11 \
+    cin=c11_4 \
+    cout=c11_5 \
+    sumout=s11_5
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:161
+.subckt adder \
+    a=a11 \
+    b=b11 \
+    cin=c11_5 \
+    cout=c11_6 \
+    sumout=s11_6
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:162
+.subckt adder \
+    a=a11 \
+    b=b11 \
+    cin=c11_6 \
+    cout=c11_7 \
+    sumout=s11_7
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:163
+.subckt adder \
+    a=a11 \
+    b=b11 \
+    cin=c11_7 \
+    cout=c11_8 \
+    sumout=s11_8
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:164
+.subckt adder \
+    a=a11 \
+    b=b11 \
+    cin=c11_8 \
+    cout=c11_9 \
+    sumout=s11_9
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:165
+.subckt adder \
+    a=a11 \
+    b=b11 \
+    cin=c11_9 \
+    cout=c11_10 \
+    sumout=s11_10
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:166
+.subckt adder \
+    a=a11 \
+    b=b11 \
+    cin=c11_10 \
+    cout=c11_11 \
+    sumout=s11
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:168
+.subckt adder \
+    a=a12 \
+    b=b12 \
+    cin=unconn \
+    cout=c12_0 \
+    sumout=s12_0
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:169
+.subckt adder \
+    a=a12 \
+    b=b12 \
+    cin=c12_0 \
+    cout=c12_1 \
+    sumout=s12_1
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:170
+.subckt adder \
+    a=a12 \
+    b=b12 \
+    cin=c12_1 \
+    cout=c12_2 \
+    sumout=s12_2
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:171
+.subckt adder \
+    a=a12 \
+    b=b12 \
+    cin=c12_2 \
+    cout=c12_3 \
+    sumout=s12_3
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:172
+.subckt adder \
+    a=a12 \
+    b=b12 \
+    cin=c12_3 \
+    cout=c12_4 \
+    sumout=s12_4
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:173
+.subckt adder \
+    a=a12 \
+    b=b12 \
+    cin=c12_4 \
+    cout=c12_5 \
+    sumout=s12_5
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:174
+.subckt adder \
+    a=a12 \
+    b=b12 \
+    cin=c12_5 \
+    cout=c12_6 \
+    sumout=s12_6
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:175
+.subckt adder \
+    a=a12 \
+    b=b12 \
+    cin=c12_6 \
+    cout=c12_7 \
+    sumout=s12_7
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:176
+.subckt adder \
+    a=a12 \
+    b=b12 \
+    cin=c12_7 \
+    cout=c12_8 \
+    sumout=s12_8
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:177
+.subckt adder \
+    a=a12 \
+    b=b12 \
+    cin=c12_8 \
+    cout=c12_9 \
+    sumout=s12_9
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:178
+.subckt adder \
+    a=a12 \
+    b=b12 \
+    cin=c12_9 \
+    cout=c12_10 \
+    sumout=s12_10
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:179
+.subckt adder \
+    a=a12 \
+    b=b12 \
+    cin=c12_10 \
+    cout=c12_11 \
+    sumout=s12
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:181
+.subckt adder \
+    a=a13 \
+    b=b13 \
+    cin=unconn \
+    cout=c13_0 \
+    sumout=s13_0
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:182
+.subckt adder \
+    a=a13 \
+    b=b13 \
+    cin=c13_0 \
+    cout=c13_1 \
+    sumout=s13_1
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:183
+.subckt adder \
+    a=a13 \
+    b=b13 \
+    cin=c13_1 \
+    cout=c13_2 \
+    sumout=s13_2
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:184
+.subckt adder \
+    a=a13 \
+    b=b13 \
+    cin=c13_2 \
+    cout=c13_3 \
+    sumout=s13_3
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:185
+.subckt adder \
+    a=a13 \
+    b=b13 \
+    cin=c13_3 \
+    cout=c13_4 \
+    sumout=s13_4
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:186
+.subckt adder \
+    a=a13 \
+    b=b13 \
+    cin=c13_4 \
+    cout=c13_5 \
+    sumout=s13_5
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:187
+.subckt adder \
+    a=a13 \
+    b=b13 \
+    cin=c13_5 \
+    cout=c13_6 \
+    sumout=s13_6
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:188
+.subckt adder \
+    a=a13 \
+    b=b13 \
+    cin=c13_6 \
+    cout=c13_7 \
+    sumout=s13_7
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:189
+.subckt adder \
+    a=a13 \
+    b=b13 \
+    cin=c13_7 \
+    cout=c13_8 \
+    sumout=s13_8
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:190
+.subckt adder \
+    a=a13 \
+    b=b13 \
+    cin=c13_8 \
+    cout=c13_9 \
+    sumout=s13_9
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:191
+.subckt adder \
+    a=a13 \
+    b=b13 \
+    cin=c13_9 \
+    cout=c13_10 \
+    sumout=s13_10
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:192
+.subckt adder \
+    a=a13 \
+    b=b13 \
+    cin=c13_10 \
+    cout=c13_11 \
+    sumout=s13
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:194
+.subckt adder \
+    a=a14 \
+    b=b14 \
+    cin=unconn \
+    cout=c14_0 \
+    sumout=s14_0
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:195
+.subckt adder \
+    a=a14 \
+    b=b14 \
+    cin=c14_0 \
+    cout=c14_1 \
+    sumout=s14_1
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:196
+.subckt adder \
+    a=a14 \
+    b=b14 \
+    cin=c14_1 \
+    cout=c14_2 \
+    sumout=s14_2
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:197
+.subckt adder \
+    a=a14 \
+    b=b14 \
+    cin=c14_2 \
+    cout=c14_3 \
+    sumout=s14_3
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:198
+.subckt adder \
+    a=a14 \
+    b=b14 \
+    cin=c14_3 \
+    cout=c14_4 \
+    sumout=s14_4
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:199
+.subckt adder \
+    a=a14 \
+    b=b14 \
+    cin=c14_4 \
+    cout=c14_5 \
+    sumout=s14_5
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:200
+.subckt adder \
+    a=a14 \
+    b=b14 \
+    cin=c14_5 \
+    cout=c14_6 \
+    sumout=s14_6
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:201
+.subckt adder \
+    a=a14 \
+    b=b14 \
+    cin=c14_6 \
+    cout=c14_7 \
+    sumout=s14_7
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:202
+.subckt adder \
+    a=a14 \
+    b=b14 \
+    cin=c14_7 \
+    cout=c14_8 \
+    sumout=s14_8
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:203
+.subckt adder \
+    a=a14 \
+    b=b14 \
+    cin=c14_8 \
+    cout=c14_9 \
+    sumout=s14_9
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:204
+.subckt adder \
+    a=a14 \
+    b=b14 \
+    cin=c14_9 \
+    cout=c14_10 \
+    sumout=s14_10
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:205
+.subckt adder \
+    a=a14 \
+    b=b14 \
+    cin=c14_10 \
+    cout=c14_11 \
+    sumout=s14
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:207
+.subckt adder \
+    a=a15 \
+    b=b15 \
+    cin=unconn \
+    cout=c15_0 \
+    sumout=s15_0
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:208
+.subckt adder \
+    a=a15 \
+    b=b15 \
+    cin=c15_0 \
+    cout=c15_1 \
+    sumout=s15_1
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:209
+.subckt adder \
+    a=a15 \
+    b=b15 \
+    cin=c15_1 \
+    cout=c15_2 \
+    sumout=s15_2
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:210
+.subckt adder \
+    a=a15 \
+    b=b15 \
+    cin=c15_2 \
+    cout=c15_3 \
+    sumout=s15_3
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:211
+.subckt adder \
+    a=a15 \
+    b=b15 \
+    cin=c15_3 \
+    cout=c15_4 \
+    sumout=s15_4
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:212
+.subckt adder \
+    a=a15 \
+    b=b15 \
+    cin=c15_4 \
+    cout=c15_5 \
+    sumout=s15_5
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:213
+.subckt adder \
+    a=a15 \
+    b=b15 \
+    cin=c15_5 \
+    cout=c15_6 \
+    sumout=s15_6
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:214
+.subckt adder \
+    a=a15 \
+    b=b15 \
+    cin=c15_6 \
+    cout=c15_7 \
+    sumout=s15_7
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:215
+.subckt adder \
+    a=a15 \
+    b=b15 \
+    cin=c15_7 \
+    cout=c15_8 \
+    sumout=s15_8
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:216
+.subckt adder \
+    a=a15 \
+    b=b15 \
+    cin=c15_8 \
+    cout=c15_9 \
+    sumout=s15_9
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:217
+.subckt adder \
+    a=a15 \
+    b=b15 \
+    cin=c15_9 \
+    cout=c15_10 \
+    sumout=s15_10
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:218
+.subckt adder \
+    a=a15 \
+    b=b15 \
+    cin=c15_10 \
+    cout=c15_11 \
+    sumout=s15
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:220
+.subckt adder \
+    a=a16 \
+    b=b16 \
+    cin=unconn \
+    cout=c16_0 \
+    sumout=s16_0
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:221
+.subckt adder \
+    a=a16 \
+    b=b16 \
+    cin=c16_0 \
+    cout=c16_1 \
+    sumout=s16_1
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:222
+.subckt adder \
+    a=a16 \
+    b=b16 \
+    cin=c16_1 \
+    cout=c16_2 \
+    sumout=s16_2
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:223
+.subckt adder \
+    a=a16 \
+    b=b16 \
+    cin=c16_2 \
+    cout=c16_3 \
+    sumout=s16_3
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:224
+.subckt adder \
+    a=a16 \
+    b=b16 \
+    cin=c16_3 \
+    cout=c16_4 \
+    sumout=s16_4
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:225
+.subckt adder \
+    a=a16 \
+    b=b16 \
+    cin=c16_4 \
+    cout=c16_5 \
+    sumout=s16_5
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:226
+.subckt adder \
+    a=a16 \
+    b=b16 \
+    cin=c16_5 \
+    cout=c16_6 \
+    sumout=s16_6
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:227
+.subckt adder \
+    a=a16 \
+    b=b16 \
+    cin=c16_6 \
+    cout=c16_7 \
+    sumout=s16_7
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:228
+.subckt adder \
+    a=a16 \
+    b=b16 \
+    cin=c16_7 \
+    cout=c16_8 \
+    sumout=s16_8
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:229
+.subckt adder \
+    a=a16 \
+    b=b16 \
+    cin=c16_8 \
+    cout=c16_9 \
+    sumout=s16_9
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:230
+.subckt adder \
+    a=a16 \
+    b=b16 \
+    cin=c16_9 \
+    cout=c16_10 \
+    sumout=s16_10
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:231
+.subckt adder \
+    a=a16 \
+    b=b16 \
+    cin=c16_10 \
+    cout=c16_11 \
+    sumout=s16
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:233
+.subckt adder \
+    a=a17 \
+    b=b17 \
+    cin=unconn \
+    cout=c17_0 \
+    sumout=s17_0
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:234
+.subckt adder \
+    a=a17 \
+    b=b17 \
+    cin=c17_0 \
+    cout=c17_1 \
+    sumout=s17_1
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:235
+.subckt adder \
+    a=a17 \
+    b=b17 \
+    cin=c17_1 \
+    cout=c17_2 \
+    sumout=s17_2
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:236
+.subckt adder \
+    a=a17 \
+    b=b17 \
+    cin=c17_2 \
+    cout=c17_3 \
+    sumout=s17_3
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:237
+.subckt adder \
+    a=a17 \
+    b=b17 \
+    cin=c17_3 \
+    cout=c17_4 \
+    sumout=s17_4
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:238
+.subckt adder \
+    a=a17 \
+    b=b17 \
+    cin=c17_4 \
+    cout=c17_5 \
+    sumout=s17_5
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:239
+.subckt adder \
+    a=a17 \
+    b=b17 \
+    cin=c17_5 \
+    cout=c17_6 \
+    sumout=s17_6
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:240
+.subckt adder \
+    a=a17 \
+    b=b17 \
+    cin=c17_6 \
+    cout=c17_7 \
+    sumout=s17_7
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:241
+.subckt adder \
+    a=a17 \
+    b=b17 \
+    cin=c17_7 \
+    cout=c17_8 \
+    sumout=s17_8
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:242
+.subckt adder \
+    a=a17 \
+    b=b17 \
+    cin=c17_8 \
+    cout=c17_9 \
+    sumout=s17_9
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:243
+.subckt adder \
+    a=a17 \
+    b=b17 \
+    cin=c17_9 \
+    cout=c17_10 \
+    sumout=s17_10
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:244
+.subckt adder \
+    a=a17 \
+    b=b17 \
+    cin=c17_10 \
+    cout=c17_11 \
+    sumout=s17
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:246
+.subckt adder \
+    a=a18 \
+    b=b18 \
+    cin=unconn \
+    cout=c18_0 \
+    sumout=s18_0
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:247
+.subckt adder \
+    a=a18 \
+    b=b18 \
+    cin=c18_0 \
+    cout=c18_1 \
+    sumout=s18_1
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:248
+.subckt adder \
+    a=a18 \
+    b=b18 \
+    cin=c18_1 \
+    cout=c18_2 \
+    sumout=s18_2
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:249
+.subckt adder \
+    a=a18 \
+    b=b18 \
+    cin=c18_2 \
+    cout=c18_3 \
+    sumout=s18_3
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:250
+.subckt adder \
+    a=a18 \
+    b=b18 \
+    cin=c18_3 \
+    cout=c18_4 \
+    sumout=s18_4
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:251
+.subckt adder \
+    a=a18 \
+    b=b18 \
+    cin=c18_4 \
+    cout=c18_5 \
+    sumout=s18_5
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:252
+.subckt adder \
+    a=a18 \
+    b=b18 \
+    cin=c18_5 \
+    cout=c18_6 \
+    sumout=s18_6
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:253
+.subckt adder \
+    a=a18 \
+    b=b18 \
+    cin=c18_6 \
+    cout=c18_7 \
+    sumout=s18_7
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:254
+.subckt adder \
+    a=a18 \
+    b=b18 \
+    cin=c18_7 \
+    cout=c18_8 \
+    sumout=s18_8
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:255
+.subckt adder \
+    a=a18 \
+    b=b18 \
+    cin=c18_8 \
+    cout=c18_9 \
+    sumout=s18_9
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:256
+.subckt adder \
+    a=a18 \
+    b=b18 \
+    cin=c18_9 \
+    cout=c18_10 \
+    sumout=s18_10
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:257
+.subckt adder \
+    a=a18 \
+    b=b18 \
+    cin=c18_10 \
+    cout=c18_11 \
+    sumout=s18
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:259
+.subckt adder \
+    a=a19 \
+    b=b19 \
+    cin=unconn \
+    cout=c19_0 \
+    sumout=s19_0
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:260
+.subckt adder \
+    a=a19 \
+    b=b19 \
+    cin=c19_0 \
+    cout=c19_1 \
+    sumout=s19_1
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:261
+.subckt adder \
+    a=a19 \
+    b=b19 \
+    cin=c19_1 \
+    cout=c19_2 \
+    sumout=s19_2
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:262
+.subckt adder \
+    a=a19 \
+    b=b19 \
+    cin=c19_2 \
+    cout=c19_3 \
+    sumout=s19_3
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:263
+.subckt adder \
+    a=a19 \
+    b=b19 \
+    cin=c19_3 \
+    cout=c19_4 \
+    sumout=s19_4
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:264
+.subckt adder \
+    a=a19 \
+    b=b19 \
+    cin=c19_4 \
+    cout=c19_5 \
+    sumout=s19_5
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:265
+.subckt adder \
+    a=a19 \
+    b=b19 \
+    cin=c19_5 \
+    cout=c19_6 \
+    sumout=s19_6
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:266
+.subckt adder \
+    a=a19 \
+    b=b19 \
+    cin=c19_6 \
+    cout=c19_7 \
+    sumout=s19_7
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:267
+.subckt adder \
+    a=a19 \
+    b=b19 \
+    cin=c19_7 \
+    cout=c19_8 \
+    sumout=s19_8
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:268
+.subckt adder \
+    a=a19 \
+    b=b19 \
+    cin=c19_8 \
+    cout=c19_9 \
+    sumout=s19_9
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:269
+.subckt adder \
+    a=a19 \
+    b=b19 \
+    cin=c19_9 \
+    cout=c19_10 \
+    sumout=s19_10
+
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:270
+.subckt adder \
+    a=a19 \
+    b=b19 \
+    cin=c19_10 \
+    cout=c19_11 \
+    sumout=s19
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:272
+.end
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:274
+.model adder
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:275
+.inputs \
+    a \
+    b \
+    cin
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:276
+.outputs \
+    cout \
+    sumout
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:277
+.blackbox
+#vtr_flow/benchmarks/microbenchmarks/adder_chains.blif:278
+.end

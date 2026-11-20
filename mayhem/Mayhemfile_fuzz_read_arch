@@ -1,0 +1,9 @@
+project: savantenvs/vtr-verilog-to-routing
+target: fuzz_read_arch
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_read_arch/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_read_arch
+    libfuzzer: true
+    timeout: 10

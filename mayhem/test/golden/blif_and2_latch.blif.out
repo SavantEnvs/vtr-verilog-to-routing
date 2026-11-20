@@ -1,0 +1,26 @@
+#vtr_flow/benchmarks/microbenchmarks/and2_latch.blif:1
+.model and2_latch
+#vtr_flow/benchmarks/microbenchmarks/and2_latch.blif:2
+.inputs \
+    a \
+    b \
+    clk
+#vtr_flow/benchmarks/microbenchmarks/and2_latch.blif:3
+.outputs \
+    c \
+    d
+
+#vtr_flow/benchmarks/microbenchmarks/and2_latch.blif:4
+.latch \
+    n1 \
+    d \
+    re \
+    clk \
+    0
+#vtr_flow/benchmarks/microbenchmarks/and2_latch.blif:6
+.names a b c
+11 1
+
+#vtr_flow/benchmarks/microbenchmarks/and2_latch.blif:8
+.names c n1
+1 1

@@ -1,0 +1,221 @@
+Printing architecture... 
+
+*************************************************
+Layout: 'auto' Type: auto Aspect_Ratio: 1.000000
+*************************************************
+
+*************************************************
+Device Info:
+	Sizing: R_minW_nmos 4.220930e+03 R_minW_pmos 1.120760e+04
+	Area: grid_logic_tile_area 2.229320e+03
+	Channel Width Distribution:
+		x: type uniform peak 1.000000e+00
+		y: type uniform peak 1.000000e+00
+	Switch Block: type wilton fs 3
+	Input Connect Block Switch Name: ipin_cblock
+*************************************************
+
+*************************************************
+Switch List:
+	Switch[1]: name 0 type mux
+				R 0.000000e+00 Cin 0.000000e+00 Cout 0.000000e+00
+				#Tdel values 1 buf_size 1.049860e+01 mux_trans_size 1.835460e+00
+				Tdel num_inputs -1 min 6.244000e-11 max 6.244000e-11
+				power_buffer_size auto
+	Switch[2]: name ipin_cblock type mux
+				R 1.055233e+03 Cin 0.000000e+00 Cout 0.000000e+00
+				#Tdel values 1 buf_size 0.000000e+00 mux_trans_size 9.833520e-01
+				Tdel num_inputs -1 min 8.045000e-11 max 8.045000e-11
+				power_buffer_size auto
+*************************************************
+
+*************************************************
+Segment List:
+	Segment[1]: frequency 8000 length 1 R_metal 0.000000e+00 C_metal 0.000000e+00
+				type unidir mux_name for within die connections: 0
+				cb 1 
+				sb 1 1 
+*************************************************
+
+*************************************************
+Direct List:
+*************************************************
+
+*************************************************
+Power:
+*************************************************
+
+*************************************************
+Clock:
+*************************************************
+
+*************************************************
+Printing library models 
+Model: ".input"
+	Output Ports: "inpad" "1" min_size="1"
+	pb_type 0: "inpad"
+Model: ".output"
+	Input Ports: "outpad" "1" min_size="1"
+	pb_type 0: "outpad"
+Model: ".latch"
+	Input Ports: "D" "1" min_size="1"
+	Input Ports: "clk" "1" min_size="1"
+	Output Ports: "Q" "1" min_size="1"
+	pb_type 0: "ff"
+Model: ".names"
+	Input Ports: "in" "4" min_size="1"
+	Output Ports: "out" "1" min_size="1"
+	pb_type 0: "lut"
+Printing user models 
+*************************************************
+
+*************************************************
+Type: "EMPTY"
+	capacity: 0
+	width: 1
+	height: 1
+	num_drivers: 0
+	num_receivers: 0
+	index: 0
+
+Type: "io"
+	capacity: 3
+	width: 1
+	height: 1
+fc_value_type: FRACTIONAL fc_value: 1.000000 segment: unnamed_segment_0 pins: 0
+fc_value_type: FRACTIONAL fc_value: 0.250000 segment: unnamed_segment_0 pins: 1
+fc_value_type: FRACTIONAL fc_value: 1.000000 segment: unnamed_segment_0 pins: 2
+fc_value_type: FRACTIONAL fc_value: 1.000000 segment: unnamed_segment_0 pins: 3
+fc_value_type: FRACTIONAL fc_value: 0.250000 segment: unnamed_segment_0 pins: 4
+fc_value_type: FRACTIONAL fc_value: 1.000000 segment: unnamed_segment_0 pins: 5
+fc_value_type: FRACTIONAL fc_value: 1.000000 segment: unnamed_segment_0 pins: 6
+fc_value_type: FRACTIONAL fc_value: 0.250000 segment: unnamed_segment_0 pins: 7
+fc_value_type: FRACTIONAL fc_value: 1.000000 segment: unnamed_segment_0 pins: 8
+	num_drivers: 3
+	num_receivers: 3
+	index: 1
+
+Equivalent Site: io
+
+Type: "clb"
+	capacity: 1
+	width: 1
+	height: 1
+fc_value_type: FRACTIONAL fc_value: 0.150000 segment: unnamed_segment_0 pins: 0 1 2 3 4 5 6 7 8 9
+fc_value_type: FRACTIONAL fc_value: 0.250000 segment: unnamed_segment_0 pins: 10 11 12 13
+fc_value_type: FRACTIONAL fc_value: 0.150000 segment: unnamed_segment_0 pins: 14
+	num_drivers: 4
+	num_receivers: 10
+	index: 2
+
+Equivalent Site: clb
+
+*************************************************
+
+*************************************************
+
+		pb_type name: io
+			blif_model: (null)
+			class_type: 0
+			num_modes: 2
+			num_ports: 3
+			port outpad type 0 num_pins 1
+			port inpad type 1 num_pins 1
+			port clock type 0 num_pins 1
+			mode inpad:
+				pb_type name: inpad
+					blif_model: .input
+					class_type: 0
+					num_modes: 0
+					num_ports: 1
+					port inpad type 1 num_pins 1
+				interconnect 2 inpad.inpad io.inpad
+					annotation inpad.inpad io.inpad 1: 9.492000e-11
+			mode outpad:
+				pb_type name: outpad
+					blif_model: .output
+					class_type: 0
+					num_modes: 0
+					num_ports: 1
+					port outpad type 0 num_pins 1
+				interconnect 2 io.outpad outpad.outpad
+					annotation io.outpad outpad.outpad 1: 2.675000e-11
+			power method: ignore
+
+		pb_type name: clb
+			blif_model: (null)
+			class_type: 0
+			num_modes: 1
+			num_ports: 3
+			port I type 0 num_pins 10
+			port O type 1 num_pins 4
+			port clk type 0 num_pins 1
+			mode default:
+				pb_type name: fle
+					blif_model: (null)
+					class_type: 0
+					num_modes: 1
+					num_ports: 3
+					port in type 0 num_pins 4
+					port out type 1 num_pins 1
+					port clk type 0 num_pins 1
+					mode n1_lut4:
+						pb_type name: ble4
+							blif_model: (null)
+							class_type: 0
+							num_modes: 1
+							num_ports: 3
+							port in type 0 num_pins 4
+							port out type 1 num_pins 1
+							port clk type 0 num_pins 1
+							mode default:
+								pb_type name: lut4
+									blif_model: (null)
+									class_type: 1
+									num_modes: 2
+									num_ports: 2
+									port in type 0 num_pins 4
+									port out type 1 num_pins 1
+									mode wire:
+										interconnect 1 lut4.in lut4.out
+											annotation lut4.in lut4.out 0: 
+                2.253000e-10
+                2.253000e-10
+                2.253000e-10
+                2.253000e-10
+              
+									mode lut4:
+										pb_type name: lut
+											blif_model: .names
+											class_type: 1
+											num_modes: 0
+											num_ports: 2
+											port in type 0 num_pins 4
+											port out type 1 num_pins 1
+										interconnect 2 lut4.in lut.in
+										interconnect 2 lut.out lut4.out
+								pb_type name: ff
+									blif_model: .latch
+									class_type: 2
+									num_modes: 0
+									num_ports: 3
+									port D type 0 num_pins 1
+									port Q type 1 num_pins 1
+									port clk type 0 num_pins 1
+											annotation clk ff.D  1: 2.160000e-10
+											annotation clk ff.Q  1: 1.426000e-10
+								interconnect 2 ble4.in lut4[0:0].in
+								interconnect 2 lut4.out ff.D
+									annotation lut4.out ff.D 1: ble6
+								interconnect 2 ble4.clk ff.clk
+								interconnect 3 ff.Q lut4.out ble4.out
+						interconnect 2 fle.in ble4.in
+						interconnect 2 ble4.out fle.out[0:0]
+						interconnect 2 fle.clk ble4.clk
+				interconnect 1 clb.I fle[3:0].out fle[3:0].in
+					annotation clb.I fle[3:0].in 1: 5.735000e-11
+					annotation fle[3:0].out fle[3:0].in 1: 5.428000e-11
+				interconnect 1 clb.clk fle[3:0].clk
+				interconnect 2 fle[3:0].out clb.O
+			power method: auto-size
+

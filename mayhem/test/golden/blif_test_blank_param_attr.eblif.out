@@ -1,0 +1,45 @@
+#libs/EXTERNAL/libblifparse/test/eblif/test_blank_param_attr.eblif:1
+.model top
+#libs/EXTERNAL/libblifparse/test/eblif/test_blank_param_attr.eblif:2
+.inputs \
+    a \
+    b \
+    clk
+#libs/EXTERNAL/libblifparse/test/eblif/test_blank_param_attr.eblif:3
+.outputs \
+    o_dff
+
+#libs/EXTERNAL/libblifparse/test/eblif/test_blank_param_attr.eblif:6
+.names a b a_and_b
+11 1
+#libs/EXTERNAL/libblifparse/test/eblif/test_blank_param_attr.eblif:7
+.cname lut_a_and_b
+
+#libs/EXTERNAL/libblifparse/test/eblif/test_blank_param_attr.eblif:12
+.subckt dff \
+    d=a_and_b \
+    q=dff_q \
+    clk=clk
+#libs/EXTERNAL/libblifparse/test/eblif/test_blank_param_attr.eblif:13
+.cname my_dff
+#libs/EXTERNAL/libblifparse/test/eblif/test_blank_param_attr.eblif:14
+.param parama 
+#libs/EXTERNAL/libblifparse/test/eblif/test_blank_param_attr.eblif:15
+.attr attra 
+#libs/EXTERNAL/libblifparse/test/eblif/test_blank_param_attr.eblif:17
+.conn dff_q o_dff
+#libs/EXTERNAL/libblifparse/test/eblif/test_blank_param_attr.eblif:19
+.end
+#libs/EXTERNAL/libblifparse/test/eblif/test_blank_param_attr.eblif:22
+.model dff
+#libs/EXTERNAL/libblifparse/test/eblif/test_blank_param_attr.eblif:23
+.inputs \
+    d \
+    clk
+#libs/EXTERNAL/libblifparse/test/eblif/test_blank_param_attr.eblif:24
+.outputs \
+    q
+#libs/EXTERNAL/libblifparse/test/eblif/test_blank_param_attr.eblif:25
+.blackbox
+#libs/EXTERNAL/libblifparse/test/eblif/test_blank_param_attr.eblif:26
+.end
